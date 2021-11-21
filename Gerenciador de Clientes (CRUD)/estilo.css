@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
+
+h1{
+  margin: 1em 0;
+  text-align: center;
+}
+
+/*TABELAS*/
+
+.tabela-container{
+  width: 50vw;
+  min-height: 60vh;
+
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin: 0 auto;
+
+  box-sizing: content-box;
+
+  background-color: #D5DBDB;
+  border-radius: 0.4em;
+}
+
+table{
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  display: relative;
+}
+
+tbody tr:nth-child(even){
+  background-color: #BFC9CA;
+}
+
+thead th, tbody td{
+  text-align: left;
+  padding: 0.4em;
+}
+
+.botao-adicionar-container{
+  width: 50vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 0.8em;
+
+  background-color: #D5DBDB;
+  border-radius: 0.4em;
+}
+
+.botaoTabela{
+  text-decoration: none;
+  color: black;
+  border-radius: 0.4em;
+  font-size: 1.22em;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.botaoTabela:hover{
+  opacity: 1;
+}
+
+button[name="botao-adicionar"]{
+  position: relative;
+  bottom: 0;
+  background-color: #2ECC71;
+  padding: 0.4em;
+  border-radius: 0.4em;
+  border: none;
+  transition: all 0.3s;
+}
+
+button[name="botao-adicionar"]:hover{
+  background-color: #28B463;
+}
+
+button[name="botao-adicionar"] a{
+  text-decoration: none;
+  font-size: 1.4em;
+  color: white;
+}
+
+button[name="botao-adicionar"] i{
+  font-size: 0.9em;
+}
+
+/*FORMULÁRIO*/
+.formulario-container{
+  width: 50vw;
+  min-height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  box-sizing: content-box;
+
+  background-color: #D5DBDB;
+  border-radius: 0.4em;
+}
+
+.formulario-container form{
+  width: 100%;
+  height: 100%;
+
+  padding: 0.8em;
+}
+
+.campo-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.campo-container label, .campo-container input{
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.botao-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+}
+
+.botao-container input, .botao-container a{
+  height: 2.6em;
+  padding: 0.4em;
+  border: none;
+  border-radius: 0.4em;
+  background-color: #2ECC71;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  margin: 0 1em
+}
+
+.botao-container a{
+  background-color: #3498DB;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mensagem-container{
+  height: 2em;
+  max-width: 50vw;
+  box-sizing: content-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8em;
+
+  position: fixed;
+  top: 0;
+
+  background-color: #F1C40F;
+  color: white;
+  border-radius: 0.4em;
+  padding: 0.4em;
+}
